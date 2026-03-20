@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web - Đăng nhập</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="login.html" class="active">Đăng nhập</a> | 
+            <a href="register.html">Đăng ký</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="login-container">
+            <h2>Màn hình đăng nhập</h2>
+            
+            <form action="process_login.php" method="POST">
+                
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="options-group">
+                    <input type="checkbox" id="remember" name="remember" checked>
+                    <label for="remember">Ghi nhớ đăng nhập</label>
+                </div>
+
+                <div class="actions-group">
+                    <a href="forgot-password.html" class="forgot-link">Quên mật khẩu</a>
+                    <button type="submit" class="btn-submit">Đăng nhập</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Lập trình web @01/2024</p>
+    </footer>
+
+</body>
+</html>
