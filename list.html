@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web - Danh sách user</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="logout.php">Đăng xuất</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="list-container">
+            <h2>Danh sách user</h2>
+            
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>UPVH</td>
+                        <td>ATJW@gmail.com</td>
+                        <td><a href="edit.php">Edit</a> | <a href="view.php">View</a> | <a href="delete.php">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>IFUK</td>
+                        <td>KULB@gmail.com</td>
+                        <td><a href="edit.php">Edit</a> | <a href="view.php">View</a> | <a href="delete.php">Delete</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+
+            <div class="pagination">
+                <a href="#" class="prev">Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">Next</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Lập trình web @01/2024</p>
+    </footer>
+
+</body>
+</html>
